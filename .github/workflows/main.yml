@@ -1,4 +1,4 @@
-name: 📊 Generate Trading Report
+name: Generate Trading Report
 
 on:
   push:
@@ -22,14 +22,12 @@ jobs:
         run: pip install pandas openpyxl
 
       - name: Generate report
-        run: |
-          cd $GITHUB_WORKSPACE
-          python scripts/generate_report.py
+        run: python scripts/generate_report.py
 
       - name: Commit report
         run: |
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add trading_report.xlsx
-          git diff --staged --quiet || git commit -m "📊 Auto-update report"
+          git diff --staged --quiet || git commit -m "Auto-update report"
           git push
