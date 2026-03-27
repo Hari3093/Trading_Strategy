@@ -1,0 +1,26 @@
+Date,Time,Asset,Trade_Type,Entry_Price,Exit_Price,Stop_Loss,Take_Profit,Position_Size,Risk_Pct,Profit_Loss,Notes,Strategy_Tag
+2024-01-03,09:32,NIFTY,Buy,21500,21650,21400,21800,50,1.0,7500,Strong breakout morning session,Breakout
+2024-01-05,10:15,BANKNIFTY,Sell,48200,47900,48500,47500,25,1.5,7500,Resistance rejection,Reversal
+2024-01-08,11:00,RELIANCE,Buy,2450,2490,2420,2530,100,0.8,4000,Trend continuation,Trend Follow
+2024-01-10,09:45,NIFTY,Sell,21800,21950,22000,21500,-50,1.2,-7500,Stopped out false breakout,Breakout
+2024-01-12,14:00,TCS,Buy,3800,3870,3750,3950,30,1.0,2100,Earnings run up,Momentum
+2024-01-15,09:30,BANKNIFTY,Buy,47500,47900,47200,48500,20,1.5,8000,Gap up continuation,Momentum
+2024-01-17,10:45,NIFTY,Sell,22000,21850,22150,21700,40,1.0,6000,Distribution pattern,Reversal
+2024-01-19,11:30,INFY,Buy,1650,1620,1600,1750,-30,0.8,-900,Sector weakness,Trend Follow
+2024-01-22,09:35,NIFTY,Buy,21700,21900,21550,22100,50,1.2,10000,Monthly support bounce,Support/Resistance
+2024-01-24,13:00,RELIANCE,Sell,2510,2480,2550,2430,80,1.0,2400,Intraday reversal,Reversal
+2024-02-01,09:32,NIFTY,Buy,22000,22200,21850,22400,50,1.0,10000,New month momentum,Breakout
+2024-02-05,10:00,BANKNIFTY,Sell,48500,48100,48800,47800,30,1.5,12000,Failed breakout,Reversal
+2024-02-07,11:15,TCS,Buy,3900,3950,3850,4050,40,0.8,2000,Pullback entry,Trend Follow
+2024-02-09,09:45,NIFTY,Buy,22100,21980,21900,-120,1.2,-6000,Whipsaw day,Breakout
+2024-02-12,14:30,HDFC,Buy,1700,1740,1670,1800,60,1.0,2400,Support bounce,Support/Resistance
+2024-02-14,09:30,BANKNIFTY,Buy,48000,48400,47700,49000,25,1.5,10000,Valentine rally,Momentum
+2024-02-16,10:00,NIFTY,Sell,22300,22150,22450,22000,45,1.0,6750,Overbought RSI,Reversal
+2024-02-20,09:35,RELIANCE,Buy,2480,2520,2450,2580,70,0.8,2800,Sector rotation,Trend Follow
+2024-02-22,11:00,NIFTY,Buy,22000,22250,21850,22500,50,1.2,12500,Budget rally,Momentum
+2024-02-27,13:00,INFY,Sell,1680,1650,1710,1600,40,1.0,1200,Earnings pressure,Reversal
+2024-03-01,09:32,NIFTY,Buy,22200,22400,22050,22700,50,1.0,10000,Month start breakout,Breakout
+2024-03-04,10:15,BANKNIFTY,Buy,48200,48700,47900,49300,30,1.5,15000,Strong trend day,Trend Follow
+2024-03-06,09:45,TCS,Sell,4000,3950,4100,3850,35,0.8,-1750,Stopped out,Reversal
+2024-03-08,11:30,NIFTY,Buy,22350,22500,22200,22700,45,1.0,6750,Continuation,Trend Follow
+2024-03-11,14:00,HDFC,Sell,1750,1720,1780,1680,50,1.0,1500,Resistance zone,Support/Resistance
