@@ -9,13 +9,23 @@ on:
 jobs:
   generate-report:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
-      - run: pip install pandas openpyxl
-      - run: python scripts/generate_report.py
+
+      - name: Install dependencies
+        run: pip install pandas openpyxl
+
+      - name: Generate report
+        run: |
+          cd $GITHUB_WORKSPACE
+          python scripts/generate_report.py
+
       - name: Commit report
         run: |
           git config user.email "action@github.com"
@@ -23,31 +33,3 @@ jobs:
           git add trading_report.xlsx
           git diff --staged --quiet || git commit -m "📊 Auto-update report"
           git push
-```
-
-Click **"Commit changes"** → **"Commit changes"** again
-
----
-
-## After That — Fix the Folder Structure
-
-Right now your repo looks like this:
-```
-❌ WRONG
-Trading_Strategy/
-├── generate_report.py   ← should be in scripts/
-├── log_trade.py         ← should be in scripts/
-├── trades.csv           ← should be in data/
-└── trading_report.xlsx
-```
-
-It should be:
-```
-✅ CORRECT
-Trading_Strategy/
-├── scripts/
-│   ├── generate_report.py
-│   └── log_trade.py
-├── data/
-│   └── trades.csv
-└── trading_report.xlsx
